@@ -4,7 +4,7 @@ language: python
 python:
   - "3.6"
 # command to install dependencies
-install: "pip install -r nose"
+install: "pip install nose"
 # command to run tests
 script: 
   - env PYTHONPATH=$(echo ${PWD}) LD_LIBRARY_PATH=$(llvm-config --libdir) nosetests -v
