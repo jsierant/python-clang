@@ -1,5 +1,7 @@
-compiler:
-  - clang
+addons:
+  apt:
+    packages:
+    - clang-4.0
 language: python
 python:
   - "3.6"
